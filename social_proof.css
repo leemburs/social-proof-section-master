@@ -5,14 +5,172 @@
   --lightGrayishMagenta: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
 }
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+body, html{
+  height: 100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  position: relative;
+  height:100%;
+  display: flex;
+  justify-content: center;
+
+  background: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+  background-position:top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+/*------------------- Grid system -------------------*/
+.container{
+  width:75%;
+  display: inline-grid;
+  grid-template-areas: 'item-a item-a item-a item-a item-b item-b item-b' 'item-c item-c item-c item-d item-d item-e item-e';
+  column-gap:10px;
+  row-gap:10px;
+  align-self: center;
+}
+
+.container > .item-a {
+  grid-area: item-a;
+}
+.container > .item-b {
+  grid-area: item-b;
+}
+.container > .item-c {
+  grid-area: item-c;
+}
+.container > .item-d {
+  grid-area: item-d;
+}
+.container > .item-e {
+  grid-area: item-e;
+}
+/*------------------- Header -------------------- */
+.header{
+  display: inline-grid;
+  margin:auto;
+}
+
+.item-a{
+  align-self: center;
+  color: var(--darkGrayishMagenta);
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+h1{
+  font-size: 40px;
+  width: 80%;
+  margin-bottom: 3%;
+  color: var(--veryDarkMagenta);
+  line-height:1;
+}
+
+.item-a p{
+  width: 85%;
+}
 
 
 
+/*------------------- Ratings ------------------- */
+.stars{
+  background-color: var(--lightGrayishMagenta);
+  margin:0% 0% 3% 0%;
+  padding: 2.5%;
+  width: 75%;
+  border-radius: 10px;
 
-/* Footer */
+}
+
+.text{
+  color: var(--veryDarkMagenta);
+  font-weight: 700;
+  font-size:14px;
+}
+
+.fivestars{
+  display: inline;
+  margin-right: 3%;
+}
+
+
+
+.star2{
+  position: relative;
+  left:12.5%;
+}
+
+.star3{
+  position:relative;
+  left: 25%;
+}
+/*------------------- Reviews ------------------- */
+.reviews{
+  display: inline-grid;
+  width:100%;
+  align-self: center;
+
+}
+
+.review{
+  background-color: var(--veryDarkMagenta);
+  color:var(--lightGrayishMagenta);
+  padding:5%;
+  border-radius: 10px;
+
+}
+
+.reviewer{
+  float: left;
+  border-radius: 50%;
+  margin:0% 5% 3% 0%;
+  transform: scale(0.5);
+}
+
+.name{
+  margin-top:5%;
+  font-weight:700;
+}
+
+.verified{
+  color: var(--softPink);
+}
+
+.review p{
+  clear: left;
+  margin: 0% 2% 8% 2%;
+  font-size: 13px;
+
+}
+
+.item-d{
+  position:relative;
+  top:5%;
+}
+
+.item-e{
+  position:relative;
+  top: 10%;
+}
+
+/*------------------- Footer ---------------------*/
 .attribution {
   font-size: 11px;
-  text-align: center;
+  position:absolute;
+  bottom:0;
+  right: 35%;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
