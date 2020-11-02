@@ -11,41 +11,88 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="social_proof.css">
 
     <title>Frontend Mentor | Social proof section</title>
 
   </head>
   <body>
-    10,000+ of our users love our products.
+    <main class="container">
+      <!-- <img class="top" src="images/bg-pattern-top-desktop.svg" alt="image">
+      <img class="bottom" src="images/bg-pattern-top-desktop.svg" alt="image"> -->
+      <section class="header"></section>
+        <section class="item-a">
+          <h1>10,000+ of our users love our products.</h1>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+          <p>We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.</p>
+        </section><!--Section item-a -->
+        <section class="item-b">
+          <div class="stars star1">
+            <div class="fivestars">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+            </div><!--Fivestars-->
+            <span class="text">Rated 5 Stars in Reviews</span>
+          </div><!--Stars Star 1-->
+          <div class="stars star2">
+            <div class="fivestars">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+            </div><!--Fivestars-->
+            <span class="text">Rated 5 Stars in Report Guru</span>
+          </div><!--Stars Star2-->
+          <div class="stars star3">
+            <div class="fivestars">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+              <img src="images/icon-star.svg" alt="image">
+            </div><!--Fivestars-->
+            <span class="text">Rated 5 Stars in BestTech</span>
+          </div><!--Stars star3-->
+        </section><!--Section item-b-->
+      </section><!--Header-->
+      
+      <!-- <section class="reviews"> -->
+        <div class="review item-c">
+          <img class="reviewer" src="images/image-colton.jpg">
+          <div class="name">Colton Smith </div>
+          <div class="verified">Verified Buyer</div>
+          <p>"We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"</p>
+        </div><!--Review item-c -->
+        <div class="review item-d">
+          <img class="reviewer" src="images/image-irene.jpg">
+          <div class="name">Irene Roberts </div>
+          <div class="verified">Verified Buyer </div>
+          <p>"Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."</p>
+        </div><!--Review item-d-->
+        <div class="review item-e">
+          <img class="reviewer" src="images/image-anne.jpg">
+          <div class="name">Anne Wallace </div>
+          <div class="verified">Verified Buyer </div>
+          <p>"Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"</p>
+        </div><!--Review item-e -->
+      <!-- </section>Reviews -->
+    </main><!--Container-->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a>. Coded by <a href="#">Stephany Leemburg</a>.
+      </div><!--Attribution-->
+    </footer>
   </body>
 </html>
