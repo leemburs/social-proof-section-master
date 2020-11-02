@@ -36,7 +36,7 @@ body{
 .container{
   width:75%;
   display: inline-grid;
-  grid-template-areas: 'item-a item-a item-a item-a item-b item-b item-b' 'item-c item-c item-c item-d item-d item-e item-e';
+  grid-template-areas: 'item-a item-a item-a item-b item-b item-b' 'item-c item-c item-d item-d item-e item-e';
   column-gap:10px;
   row-gap:10px;
   align-self: center;
@@ -58,10 +58,6 @@ body{
   grid-area: item-e;
 }
 /*------------------- Header -------------------- */
-.header{
-  display: inline-grid;
-  margin:auto;
-}
 
 .item-a{
   align-self: center;
